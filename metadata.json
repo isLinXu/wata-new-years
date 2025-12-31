@@ -1,0 +1,7 @@
+{
+  "name": "2026 New Year Countdown System",
+  "description": "A high-performance, visually stunning countdown system for New Year 2026 featuring a personalized photo wall, wish board, and intelligent greeting generation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
