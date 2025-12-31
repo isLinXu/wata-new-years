@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { Settings, Image as ImageIcon, MessageSquare, Star, Trash2, Plus, RefreshCw, ChevronLeft, ChevronRight, X, Heart, BookOpen, Coffee } from 'lucide-react';
+import confetti from 'canvas-confetti';
 import { AppConfig, Wish, Photo } from './types';
 import { DEFAULT_GREETINGS, BACKGROUND_PRESETS, WISH_COLORS } from './constants';
 import { generateSmartGreeting } from './geminiService';
@@ -68,7 +69,6 @@ const App: React.FC = () => {
   }, [config.autoPlayPhoto, photos.length]);
 
   const triggerConfetti = () => {
-    // @ts-ignore
     confetti({
       particleCount: 200,
       spread: 90,
